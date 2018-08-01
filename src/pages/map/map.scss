@@ -14,7 +14,6 @@ page-map {
 
 .Maptrk{
     position: relative;
-    left: 55px;
 }
 
 .Margin{
@@ -23,8 +22,30 @@ page-map {
 
 .PlusB{
     position: absolute;
-    left: 265px;
+    left: 300px;
     background: transparent !important;
+    color: #41a9de
+}
+
+.color{
+    color: #41a9de;
+}
+
+.MAAP{
+    text-decoration-color: #FFFFFF !important;
+    color: #FFFFFF !important;
+    text-align: center;
+    text-emphasis-color: #FFFFFF !important;
+}
+
+.toolbar-background{
+    background-color: #41a9de !important;
+}
+
+.toolbar-text{
+    color: #FFFFFF !important;
+    text-decoration-color: #FFFFFF !important;
+    text-emphasis-color: #FFFFFF !important;
 }
 
 //.color{

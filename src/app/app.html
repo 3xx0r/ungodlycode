@@ -1,23 +1,46 @@
 <ion-menu [content]="content">
     <ion-header>
         <ion-toolbar>
-            <ion-title>Map Menu</ion-title>
+            <h1 id="menu">Map Menu</h1>
             <ion-list>
-                <ion-list-header>Ionic</ion-list-header>
-                <button ion-item (click)="close()">Turn On/Off</button>
-                <button ion-item (click)="close()">Set Distance</button>
-                <button ion-item (click)="close()">Settings</button>
-                <button ion-item (click)="close()">Log Out</button>
+                <button (click)="ionic.Platform.exitApp()" ion-item icon-start>
+                    <ion-icon name="md-power"></ion-icon>
+                    Turn On/Off
+                  </button>
+                
+                  <button ion-item icon-start (click)="presentPrompt()">
+                    <ion-icon name="ios-pin"></ion-icon>
+                    Set Distance
+                  </button>
+                  <button ion-item icon-start>
+                    <ion-icon name="ios-settings"></ion-icon>
+                    Settings
+                  </button>
+
+                  <button ion-item icon-start>
+                    <ion-icon name="md-log-out"></ion-icon>
+                    Log Out
+                  </button>
+
+<!-- 
+                <button ion-item icon-start (click)="close()">Turn On/Off</button>
+                //  <ion-icon left name="md-power"></ion-icon>
+                // <button ion-item (click)="close()">Set Distance</button>
+                // <button ion-item (click)="close()">Settings</button>
+                // <button ion-item (click)="close()">Log Out</button>
+                
+            
+                <button ion-item icon-start>
+                    <ion-icon name="md-power"></ion-icon>
+                    Left Icon
+                  </button>
+
+
+                    aisuerhisueh -->
+
               </ion-list>
         </ion-toolbar>
 
-        <ion-content>
-            <ion-list>
-                <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-                    {{p.title}}
-                </button>
-            </ion-list>
-        </ion-content>
     </ion-header>
 
 </ion-menu>

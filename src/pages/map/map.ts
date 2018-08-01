@@ -63,11 +63,12 @@ export class MapPage {
     // })
     // 34.021863
 
+  
     let mapOptions: GoogleMapOptions = {
       camera: {
         target: {
-          lat:  34.021863,
-          lng: 118.287008
+          lat:  34.02051,
+          lng: -118.28563
         },
         zoom: 18,
         tilt: 30
@@ -76,12 +77,12 @@ export class MapPage {
 
     this.map = GoogleMaps.create('map_canvas', mapOptions);
   }
-  presentPopover(myEvent) {
-    let popover = this.popoverCtrl.create(PopoverPage);
-    popover.present({
-      ev: myEvent
-    });
-  }
+  // presentPopover(myEvent) {
+  //   let popover = this.popoverCtrl.create(PopoverPage);
+  //   popover.present({
+  //     ev: myEvent
+  //   });
+  // }
 
   presentPrompt() {
     let alert = this.alertCtrl.create({
